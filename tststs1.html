@@ -185,7 +185,7 @@
             localStorage.setItem("tmp_info_res",JSON.stringify({}));
 
             var NowURL = location.href;
-            fetch(NowURL..replace("https","http").replace("8080","8081").replace("info.html","") + "api/get_infos")
+            fetch(NowURL.replace("https","http").replace("8080","8081").replace("info.html","") + "api/get_infos")
             .then((res)=>{
                 return( res.json() );
             })
